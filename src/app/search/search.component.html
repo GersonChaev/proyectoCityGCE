@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div class="texto"><h1>¡Bienvenido!</h1> <br> <h1>Elige un país y te brindaremos detalles de su ciudad</h1></div>
+</div>
+
+
+<app-search-criteria style="margin-bottom: -15rem !important;" (criteriaSelected)="onCriteriaSelectedFromChild($event)"></app-search-criteria>
+<app-search-result [criteriaListenedFromExternalComponent]="criteriaSelected" [loading]="loading"></app-search-result>
+
+

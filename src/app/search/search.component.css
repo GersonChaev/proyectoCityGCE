@@ -1,0 +1,32 @@
+.texto {
+  /*background-color: rgba(169, 46, 124, 0.95);  Para dar color a fondo
+  background-color: #4e86e6;*/
+  width: 30rem;  /*Para determinar espacio usado de ancho*/
+  padding: 1.5rem;
+  border-radius: 2rem;
+  background: linear-gradient(to right, rgb(10, 6, 6), rgb(46, 14, 77));
+}
+
+h1{
+  color: rgb(173, 134, 43);
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.wrapper{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /*
+  animation: parpadear 0.7s linear infinite;
+  animation-play-state: running;*/
+}
+
+@keyframes parpadear {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}

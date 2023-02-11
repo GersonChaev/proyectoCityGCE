@@ -1,0 +1,69 @@
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+#textoBox{
+  height: 10px;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-style:italic;
+
+}
+
+mat-form-field input {
+  color: white;
+}
+
+mat-grid-list {
+  margin-bottom: 0rem;
+  padding:0rem  /*Para dar espacio dentro de grilla*/
+}
+
+mat-card {
+  background-color: rgba(17, 54, 201, 0.95);
+  width: 280px;
+  height: 290px;
+  border-radius: 10%;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+mat-error{
+  color: rgb(178, 46, 10);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+img{
+  border-radius: 6.5rem;
+  width: 600px;
+  height: 300px;
+  margin-right: 150px;
+}
+
+h2{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+h3{
+  color: rgb(0, 174, 255);
+  font-size: 30px;
+}
+
+.texto:hover{
+   transform: scale(1.5);
+}
+
+

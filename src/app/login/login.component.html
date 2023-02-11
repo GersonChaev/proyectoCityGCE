@@ -1,0 +1,47 @@
+<mat-grid-list cols="2" rowHeight="20rem" gutterSize="2rem">
+
+  <div>
+    <mat-grid-tile >
+    <mat-card>
+      <mat-card-title style="margin-top: 1rem; margin-bottom: 1rem; color:white;">Iniciar Sesi&oacute;n</mat-card-title>
+      <mat-card-content>
+        <form (submit)="submit(postForm)" #postForm="ngForm">
+        <p>
+          <mat-form-field>
+            <input type="text" matInput ngModel placeholder="tucorreo@example.com" name="email" required #email="ngModel">
+            <mat-error *ngIf="email.invalid">Introduzca su correo</mat-error>
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field>
+            <input type="password" matInput ngModel placeholder="Contraseña" name="pwd" required #pwd="ngModel">
+            <mat-error *ngIf="pwd.invalid">Introduzca su password</mat-error>
+          </mat-form-field>
+        </p>
+
+        <div class="button">
+          <button type="submit" mat-button style="background-color: rgba(232, 217, 228, 0.656);" color="primary">Iniciar Sesi&oacute;n</button>
+        </div>
+
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</div>
+
+
+<div>
+  <mat-grid-tile><img src="../../assets/IMG/torreLogin.jpg" height="100%"></mat-grid-tile>
+</div>
+
+<div>
+  <mat-grid-tile id="textBox" colspan="2">
+    <div class="texto">
+      <h1 style="text-align: center;">Gracias por ser parte de esta familia.</h1>
+    </div>
+  </mat-grid-tile>
+</div>
+
+
+</mat-grid-list>

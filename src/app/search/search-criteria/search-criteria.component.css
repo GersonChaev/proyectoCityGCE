@@ -1,0 +1,32 @@
+mat-grid-list {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 5rem;
+  width: 350px;
+  height: 250px;
+  background-color:crimson;
+  color:aliceblue
+}
+@font-face {
+  font-family: myFont;
+  src: url(../../font/PlayfairDisplay-Black.ttf);
+}
+p{
+  font-size: 20px;
+  padding-top: 10px;
+  font: bold 25px myFont;
+}
+
+
+
+button:hover{
+  transform: scale(1.2);
+  color: red;
+  font-weight: bold;
+  background-color: yellow;
+}
+

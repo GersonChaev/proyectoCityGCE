@@ -1,0 +1,145 @@
+
+mat-grid-list {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding:2rem;
+  margin: 40px;
+}
+
+.texto {
+  background-color: rgb(106, 158, 161);
+  width: 50rem;
+  padding: 2.5rem;
+  border-radius: 2rem;
+}
+
+p {
+  color: #0e0f09;
+  font-weight: bold;
+  text-align: center;
+}
+
+#titulo2 {
+  margin: auto;
+  background-color:rgb(54, 87, 89);
+  padding: 0.8rem;
+  border-radius: 2.5rem;
+
+  position: relative;
+  overflow: hidden;
+}
+
+#titulo1 {
+  margin: auto;
+  background-color: rgba(21, 28, 85, 0.891);
+  padding: 0.8rem;
+  border-radius: 2.5rem;
+
+  width: 500px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+h2{
+  text-align: center;
+  color: rgb(77, 235, 106);
+  font-size: 60px;
+
+  padding-top: 20px;
+  width: 500px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: moveBlock 0.5s linear infinite;
+}
+@keyframes moveBlock {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 500px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+#cambio{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 10px;
+
+}
+
+#titleText{
+  color:white;
+  text-align: center;
+}
+
+.wrapper{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.charger{
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 60%;
+  border: 10px solid #fff;
+  border-color: #b1da64 transparent #6481da transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.information{
+  color: rgb(31, 31, 7);
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../../font/SimpleHandmade.otf);
+}
+
+li{
+  padding-top: 20px;
+  padding-right: 20px;
+  font: bold 30px myFont;
+  font-weight: bold;
+}
+
+ul{
+  background-color: rgb(106, 158, 161);
+  border-radius: 10%;
+}
+
+#titleInfo{
+  font-size: 20px;
+  background-color:rgb(54, 87, 89);
+  color: white;
+ text-align: center;
+}
+
+#titleText,#titleInfo{
+  font: bold 30px myFont;
+}

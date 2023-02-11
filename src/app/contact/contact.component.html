@@ -1,0 +1,52 @@
+<body>
+
+<mat-grid-list cols="2" rowHeight="19rem" gutterSize="2rem">
+
+  <mat-grid-tile id="textoBox" colspan="2">
+    <div class="texto">
+      <h2 style="text-align: center;">¡¡Contáctanos!!</h2>
+      <!-- <br> <h3 style="text-align: center;">¡¡¡Aclara tus dudas. Te esperamos!!!</h3> -->
+    </div>
+  </mat-grid-tile>
+
+  <div>
+    <mat-grid-tile colspan="2">
+      <mat-card>
+        <mat-card-title style="margin-bottom: 1rem; color:rgb(192, 209, 158);">Contacto</mat-card-title>
+        <mat-card-content>
+          <form (submit)="submit(postForm)" #postForm="ngForm">
+
+          <p>
+            <mat-form-field color="accent">
+              <input type="text" matInput ngModel placeholder="tucorreo@example.com" name="email" required #email="ngModel">
+              <mat-error *ngIf="email.invalid">Introduzca su correo</mat-error>
+            </mat-form-field>
+          </p>
+
+          <p>
+            <mat-form-field>
+              <input type="text" matInput ngModel placeholder="Tu mensaje" name="mensaje" required #email="ngModel">
+              <mat-error *ngIf="email.invalid">Introduzca el mensaje</mat-error>
+            </mat-form-field>
+          </p>
+
+          <div class="button">
+            <button type="submit" mat-button style="background-color: rgba(232, 217, 228, 0.656);" color="primary">Enviar</button>
+          </div>
+
+          </form>
+        </mat-card-content>
+      </mat-card>
+     </mat-grid-tile>
+  </div>
+
+<!--
+  <div>
+    <mat-grid-tile colspan="2">
+      <img src="../../assets/IMG/contact1.gif" height="100%">
+    </mat-grid-tile>
+  </div>
+-->
+</mat-grid-list>
+
+</body>
